@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  top: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  padding: 50px;
+  width: calc(100vw - 100px);
+  height: calc(100vh - 100px);
+  gap: 20px;
+}
+
+.left {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.right {
+  display: flex;
+  flex: 4;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selected-image {
+  width: 100%;
+  height: calc(100vh - 280px);
+}
+
+.selected-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.image-list-wrapper {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  justify-content: center;
+}
+
+.image-list {
+  display: flex;
+  height: 160px;
+  overflow-x: scroll;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+.image-list img {
+  height: 100%;
+  object-fit: cover;
+  min-width: 140px;
+  border-radius: 20px;
+}
+
+.content {
+  padding: 0 50px;
+  height: 100%;
+  color: rgba(120, 120, 120);
+}
+
+.content p {
+  font-size: 13px;
+  overflow: scroll;
+}
+
+.content h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.autoplay-button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.autoplay-button svg {
+  font-size: 100px;
+  fill: rgb(0, 166, 166);
+}
