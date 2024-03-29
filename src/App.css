@@ -1,7 +1,7 @@
 body {
   margin: 0;
   top: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -59,6 +59,7 @@ body {
   gap: 20px;
   border-radius: 20px;
 }
+
 .image-list img {
   height: 100%;
   object-fit: cover;
@@ -67,7 +68,7 @@ body {
 }
 
 .content {
-  padding: 0 50px;
+  /* padding: 0 50px; */
   height: 100%;
   color: rgba(120, 120, 120);
 }
@@ -91,4 +92,22 @@ body {
 .autoplay-button svg {
   font-size: 100px;
   fill: rgb(0, 166, 166);
+}
+
+@media screen and (max-width: 930px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .left {
+    overflow: unset;
+  }
+
+  .selected-image {
+    height: calc(100vh - 580px);
+  }
+
+  .image-list {
+    height: 120px;
+  }
 }
